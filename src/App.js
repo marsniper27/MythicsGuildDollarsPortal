@@ -7,14 +7,16 @@ import { BootstrapNavbar, Footer, Home, DC, Slots, Swap, Account } from "./compo
 import {ThemeProvider} from "styled-components";
 import { GlobalStyles } from "./components/GlobalStyles";
 import { lightTheme, darkTheme } from "./components/Theme";
+import IpfsRouter from 'ipfs-react-router'
 
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       
     <GlobalStyles/>
-    <div className="App"> 
-      <Provider store={store}>            
+    <div className="App">
+      <IpfsRouter>
+        <Provider store={store}>            
           <PersistGate loading={null} persistor={persistor}>
             <BootstrapNavbar />
             <Routes>
@@ -28,6 +30,7 @@ function App() {
             <Footer />
           </PersistGate>
         </Provider>
+      </IpfsRouter>
     </div>
     </ThemeProvider>
   );

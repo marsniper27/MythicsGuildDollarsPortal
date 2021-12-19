@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/Account.css","webpack://src/index.css"],"names":[],"mappings":"AAGA,eACI,gBACJ,CCLA,MACI,eAAgB,CAChB,4BACJ","file":"main.823e5fb3.chunk.css","sourcesContent":[".body{\r\n    font-size: medium;\r\n}\r\n.nftName{\r\n    font-size: medium;\r\n}",".body{\r\n    background: gray;\r\n    font-variation-settings: gray;\r\n}"]}
